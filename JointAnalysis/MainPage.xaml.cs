@@ -10,8 +10,7 @@ using Xamarin.Forms;
 
 namespace JointAnalysis
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
+
     [DesignTimeVisible(true)]
     public partial class MainPage : ContentPage
     {
@@ -19,6 +18,7 @@ namespace JointAnalysis
         {
             InitializeComponent();
 
+            //Handles event when takePhoto button is clicked
             takePhoto.Clicked += async (sender, args) =>
             {
                 //Source: https://github.com/jamesmontemagno/MediaPlugin/blob/master/samples/MediaSample/MediaSample/MediaPage.xaml.cs
