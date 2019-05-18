@@ -2,47 +2,46 @@
 ## COP2001 Project at FGCU
 
 ## Problem Statement
-  The problem is to create a program to add to my portfolio, which displays my skills to potential employers and my professor. The ultimate short-term goal within the next six weeks is to create a cross-platform mobile app that will run on both iOS and Android phones that is able to overlay an AR skeleton over human body within a camera view.  My boundaries are to develop software within the following categories: Android, Gaming, C#, Raspberry Pi, or iOS. The long-term goal is to use Augmented Reality to recognize and display joint positions, and to analyze biomechanics while standing, walking, running, and throwing. Short-term success would be to learn C# and use Xamarin to create a mobile application that runs on both iOS and Android, which uses OpenCV, ARKit and ARCore to recognize the user’s face and construct a virtual skeleton. The main constraints are tutorial materials for Xamarin and the limited time available in the next six weeks to complete the project. I am assuming that C# will have the capability of achieving the short-term goal to create a cross platform mobile application using Xamarin and implementing Augmented Reality/Computer Vision. Another assumption I am making is that I will be capable of learning how to solve this problem and achieving the short-term goal within this accelerated semester. The stakeholders are myself, my professor, and potential employers. The timeline for the completion of the short-term goal of completing a personal project with C# is six weeks. Each week will be a Sprint during which I have set incremental tasks described in the Sprint Backlogs below.
+  The problem is to create a program to add to my portfolio, which displays my skills to potential employers and my professor. The ultimate short-term goal within the next six weeks is to create a cross-platform mobile app that will originally run on iOS that is able to overlay an AR skeleton on a human body within a camera view using OpenCV. My boundaries are to develop software within the following categories: Android, Gaming, C#, Raspberry Pi, or iOS. The long-term goal is to use these technologies to analyze biomechanics while standing, walking, running, throwing and a library of other movements with a cross-platform application available on iOS, Android, and Windows. Short-term success would be to learn C# and use Xamarin to create a mobile application that runs on iOS, which uses OpenCV, and ARKit to recognize the user’s face and construct a virtual skeleton either over a picture or video. The main constraints are tutorial materials for Xamarin and the limited time available in the next six weeks to complete the project. Another constraint is that I do not own an Android device, so I may need to find a way to use a webcam with the Android emulator to test and develop for this platform. I am assuming that C# will have the capability of achieving the short-term goal to create a cross platform mobile application using Xamarin and implementing Augmented Reality/Computer Vision. Another assumption I am making is that I will be capable of learning how to solve this problem and achieving the short-term goal within this accelerated semester. The stakeholders are myself, my professor, and potential employers. The timeline for the completion of the short-term goal of completing a personal project with C# is six weeks. Each week will be a Sprint during which I have set incremental tasks described in the Sprint Backlogs below.
 
 ## Sprint Backlog 1
-- Choose language and personal project goals (C# and joint detection on iOS and Android)
-- Setup IDE and compiler on Windows and Mac
-- Download Xamarin framework
-- Setup Xam.Plugin.Media
-- Connect to Github
-- Finish problem statement and plan out the remaining SBL tasks
+- Choose language and personal project goals (C# and joint detection on iOS and Android- 1 hour 5/17)
+- Setup IDE and compiler on Windows and Mac (30 minutes 5/17)
+- Download Xamarin framework (15 minutes 5/17)
+- Setup Xam.Plugin.Media (15 minutes 5/18)
+- Connect to Github (15 minutes 5/18)
+- Start a project in Visual Studio and follow tutorials to request permissions to access camera (1 hour 5/18)
+- Finish problem statement and plan out the remaining SBL tasks (30 minutes 5/18)
 
 ## Sprint Backlog 2
-- 
-- 
-- 
-- 
-- 
+- Watch tutorials for C#
+- Watch tutorials for Xamarin
+- Study ARKit and learn to implement face detection in C#
+- Utilize ARKit within Xamarin to detect a face
+- Overlay an outline around the head
+- Debug, document, and format
 
 ## Sprint Backlog 3
-- 
-- 
-- 
-- 
-- 
+- Find and Study tutorials and documentation for OpenCV
+- Research open-source projects that have implemented joint detection
+- Utilize OpenCV within Xamarin
+- Debug, document, and format
 
 ## Sprint Backlog 4
-- 
-- 
-- 
-- 
-- 
+- Build a virtual skeleton with ARKit and OpenCV over an image
+- Outline the torso, arms and legs within the image view
+- Estimate joint positions
+- Overlay markers over the joint positions
+- Debug, document, and format
 
 ## Sprint Backlog 5
-- 
-- 
-- 
-- 
-- 
+- Learn how to use OpenCV and ARKit to have the virtual skeleton move with the body in real time 
+- Record a video of movement with overlay
+- Test different combinations of clothing and environments for accuracy
+- Debug, document, and format
 
 ## Sprint Backlog 6
-- 
-- 
-- 
-- 
-- 
+- Debug, improve documentation, and research ways to improve accuracy of joint detection
+- Start creating algorithms to calculate joint angles
+- Start writing methods to analyze human movements
+- Begin coding algorithms that recognize movements faults and ideal movement
