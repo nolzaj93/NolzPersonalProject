@@ -1,4 +1,9 @@
-﻿using Plugin.Media;
+﻿/*
+ * @author Austin Nolz
+ */
+
+
+using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
@@ -18,13 +23,13 @@ namespace JointAnalysis
         {
             InitializeComponent();
 
+            //Source: https://github.com/jamesmontemagno/MediaPlugin/blob/master/samples/MediaSample/MediaSample/MediaPage.xaml.cs
             //Handles event when takePhoto button is clicked
             takePhoto.Clicked += async (sender, args) =>
             {
-                //Source: https://github.com/jamesmontemagno/MediaPlugin/blob/master/samples/MediaSample/MediaSample/MediaPage.xaml.cs
                 if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
                 {
-                    await DisplayAlert("No Camera", ":( No camera available.", "OK");
+                    await DisplayAlert("No Camera", "No camera available.", "OK");
                     return;
                 }
 
@@ -52,11 +57,12 @@ namespace JointAnalysis
                 });
             };
 
+            //Handles event when pickPhoto button is clicked
             pickPhoto.Clicked += async (sender, args) =>
             {
                 if (!CrossMedia.Current.IsPickPhotoSupported)
                 {
-                    await DisplayAlert("Photos Not Supported", ":( Permission not granted to photos.", "OK");
+                    await DisplayAlert("Photos Not Supported", "Permission not granted to photos.", "OK");
                     return;
                 }
                 var file = await Plugin.Media.CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
@@ -77,11 +83,12 @@ namespace JointAnalysis
                 });
             };
 
+            //Handles event when takeVideo button is clicked
             takeVideo.Clicked += async (sender, args) =>
             {
                 if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakeVideoSupported)
                 {
-                    await DisplayAlert("No Camera", ":( No camera avaialble.", "OK");
+                    await DisplayAlert("No Camera", "No camera avaialble.", "OK");
                     return;
                 }
 
@@ -99,11 +106,12 @@ namespace JointAnalysis
                 file.Dispose();
             };
 
+            //Handles event when pickVideo button is clicked
             pickVideo.Clicked += async (sender, args) =>
             {
                 if (!CrossMedia.Current.IsPickVideoSupported)
                 {
-                    _ = ("Videos Not Supported", ":( Permission not granted to videos.", "OK");
+                    _ = ("Videos Not Supported", "Permission not granted to videos.", "OK");
                     return;
                 }
                 var file = await CrossMedia.Current.PickVideoAsync();

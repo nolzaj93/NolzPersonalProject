@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * @author Austin Nolz
+ */
+
+
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

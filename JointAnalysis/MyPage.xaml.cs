@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * @author Austin Nolz
+ */
+
+
+using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;

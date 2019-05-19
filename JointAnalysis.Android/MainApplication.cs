@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * @author Austin Nolz
+ */
+
+using System;
 using Android.App;
 using Android.Runtime;
 using Plugin.CurrentActivity;
