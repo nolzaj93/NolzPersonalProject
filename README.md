@@ -12,11 +12,11 @@
 - Connect to Github (15 minutes 5/18)
 - Start a project in Visual Studio and follow tutorials to request permissions to access camera (1 hour 5/18)
 - Finish problem statement and plan out the remaining SBL tasks (30 minutes 5/18)
+- Total time logged: 3 hours 45 minutes
 
 ## Sprint Backlog 2
-- Watch tutorials for C#
-- Watch tutorials for Xamarin
-- Study ARKit and learn to implement face detection in C#
+- Read/watch tutorials for C#/Xamarin (1.5 hours 5/23)
+- Study ARKit and learn to implement face detection in C# (30 minutes 5/23,
 - Utilize ARKit within Xamarin to detect a face
 - Overlay an outline around the head
 - Debug, document, and format
