@@ -18,7 +18,7 @@
 - Read/watch tutorials for C#/Xamarin (1.5 hours 5/23)
 - Study ARKit and learn to implement face detection in C# (30 minutes 5/23,
 - Connect iPhone 7 over WiFi for debugging
-- Utilize ARKit within Xamarin to detect a face
+- Utilize ARKit/Vision within Xamarin to detect a face
 - Overlay an outline around the head
 - Debug, document, and format
 
