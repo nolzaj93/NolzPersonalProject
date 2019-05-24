@@ -4,9 +4,7 @@
       <!-- Source: https://github.com/jamesmontemagno/MediaPlugin/blob/master/samples/MediaSample/MediaSample/MediaPage.xaml -->
         
       <Button x:Name="takePhoto" Text="Take Photo"/>
-      <Button x:Name="pickPhoto" Text="Pick Photo"/>
       <Button x:Name="takeVideo" Text="Take Video"/>
-      <Button x:Name="pickVideo" Text="Pick Video"/>
 
       <Image x:Name="image"/>
     </StackLayout>

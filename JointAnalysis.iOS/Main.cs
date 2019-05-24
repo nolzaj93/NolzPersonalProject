@@ -11,6 +11,8 @@ using UIKit;
 
 namespace JointAnalysis.iOS
 {
+    /* The Applicaion class by convention holds the main method for the iOS app.
+     */   
     public class Application
     {
         // This is the main entry point of the application.

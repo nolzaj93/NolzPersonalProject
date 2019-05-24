@@ -25,7 +25,8 @@ namespace JointAnalysis
 
             //Source: https://github.com/jamesmontemagno/MediaPlugin/blob/master/samples/MediaSample/MediaSample/MediaPage.xaml.cs
             //Handles event when takePhoto button is clicked
-            takePhoto.Clicked += async (sender, args) =>
+            takePhoto.Clicked += async (
+                sender, args) =>
             {
                 if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
                 {
@@ -57,31 +58,7 @@ namespace JointAnalysis
                 });
             };
 
-            //Handles event when pickPhoto button is clicked
-            pickPhoto.Clicked += async (sender, args) =>
-            {
-                if (!CrossMedia.Current.IsPickPhotoSupported)
-                {
-                    await DisplayAlert("Photos Not Supported", "Permission not granted to photos.", "OK");
-                    return;
-                }
-                var file = await Plugin.Media.CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
-                {
-                    PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium,
 
-                });
-
-
-                if (file == null)
-                    return;
-
-                image.Source = ImageSource.FromStream(() =>
-                {
-                    var stream = file.GetStream();
-                    file.Dispose();
-                    return stream;
-                });
-            };
 
             //Handles event when takeVideo button is clicked
             takeVideo.Clicked += async (sender, args) =>
@@ -106,22 +83,7 @@ namespace JointAnalysis
                 file.Dispose();
             };
 
-            //Handles event when pickVideo button is clicked
-            pickVideo.Clicked += async (sender, args) =>
-            {
-                if (!CrossMedia.Current.IsPickVideoSupported)
-                {
-                    _ = ("Videos Not Supported", "Permission not granted to videos.", "OK");
-                    return;
-                }
-                var file = await CrossMedia.Current.PickVideoAsync();
 
-                if (file == null)
-                    return;
-
-                _ = ("Video Selected", "Location: " + file.Path, "OK");
-                file.Dispose();
-            };
         }
     }
 }
