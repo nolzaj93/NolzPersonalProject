@@ -16,13 +16,18 @@
 
 ## Sprint Backlog 2
 - Read/watch tutorials for C#/Xamarin (1.5 hours 5/23)
-- Study ARKit and learn to implement face detection in C# (30 minutes 5/23, 2 hours 5/24)
-- Connect iPhone 7 over WiFi for debugging
-- Utilize ARKit/Vision within Xamarin to detect a face
-- Overlay an outline around the head
+- Study iOS Vision to learn how to implement face detection in C# (30 minutes 5/23, 2 hours 5/24)
+- https://trailheadtechnology.com/vision-framework-for-face-landmarks-detection-using-xamarin-ios/
+- Utilize tutorials from Microsoft to implement a basic camera (3 hours 5/25)
+- https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/custom-renderer/view
+- https://github.com/xamarin/xamarin-forms-samples/tree/master/CustomRenderers/View
+- Connect iPhone 7 over WiFi for debugging, fix USB recognition error on Macbook Pro (1 hour 5/25)
+- https://docs.microsoft.com/en-us/xamarin/ios/deploy-test/wireless-deployment?tabs=macos
 - Debug, document, and format
 
 ## Sprint Backlog 3
+- Utilize ARKit/Vision within Xamarin to detect a face
+- Overlay an outline around the head
 - Find and Study tutorials and documentation for OpenCV
 - Research open-source projects that have implemented joint detection
 - Utilize OpenCV within Xamarin
