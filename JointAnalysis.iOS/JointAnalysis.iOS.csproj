@@ -74,6 +74,9 @@
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="ARImpl_iOS.cs" />
+    <Compile Include="CamPreviewRenderer.cs" />
+    <Compile Include="UICamPreview.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

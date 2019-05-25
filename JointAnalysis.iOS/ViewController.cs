@@ -1,11 +1,13 @@
 ﻿using ARKit;
 using SceneKit;
 using UIKit;
+using Vision;
 
 namespace JointAnalysis.iOS
 {
     public class ViewController : UIViewController
     {
+
         public ViewController() : base("ViewController", null)
         {
         }

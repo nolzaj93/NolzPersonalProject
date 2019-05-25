@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:JointAnalysis" x:Class="JointAnalysis.MainPage">
-    <StackLayout Spacing="10" Padding="30">
-      <!-- Source: https://github.com/jamesmontemagno/MediaPlugin/blob/master/samples/MediaSample/MediaSample/MediaPage.xaml -->
-        
-      <Button x:Name="takePhoto" Text="Take Photo"/>
-      <Button x:Name="takeVideo" Text="Take Video"/>
-
-      <Image x:Name="image"/>
-    </StackLayout>
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:JointAnalysis;assembly=JointAnalysis"
+             x:Class="JointAnalysis.MainPage"
+             Padding="0,20,0,0"
+             Title="Main Page">
+    
+    <!-- Source: https://github.com/xamarin/xamarin-forms-samples/tree/master/CustomRenderers/View -->
+    <ContentPage.Content>
+        <StackLayout>
+            <local:CamPreview Camera="Rear" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
