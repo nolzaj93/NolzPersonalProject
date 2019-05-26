@@ -1,4 +1,8 @@
-﻿using UIKit;
+﻿/*
+ *  Austin Nolz COP 2001 Personal Project, learning/testing with ARKit,Vision
+ */
+
+using UIKit;
 
 [assembly: Xamarin.Forms.Dependency(typeof(JointAnalysis.iOS.ARAppImpl))]
 namespace JointAnalysis.iOS
@@ -8,7 +12,7 @@ namespace JointAnalysis.iOS
         public void LaunchAR()
         {
             // This is in native code; invoke the native UI
-            ViewController viewController = new ViewController();
+            ARViewController viewController = new ARViewController();
             UIApplication.SharedApplication.KeyWindow.RootViewController.
               PresentViewController(viewController, true, null);
         }

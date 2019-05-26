@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+ *  Austin Nolz COP 2001 Personal Project, learning/testing with ARKit,Vision
+ */
+
+using System.Collections;
 using Foundation;
 using UIKit;
 

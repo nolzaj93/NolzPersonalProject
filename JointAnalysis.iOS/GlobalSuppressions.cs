@@ -6,4 +6,6 @@
 
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Code Notifications", "XI0002:Notifies you from using newer Apple APIs when targeting an older OS version", Justification = "<Pending>", Scope = "member", Target = "~M:JointAnalysis.iOS.ViewController.PositionScene(ARKit.ARSCNView)")]
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Code Notifications", "XI0002:Notifies you from using newer Apple APIs when targeting an older OS version", Justification = "<Pending>", Scope = "member", Target = "~M:Camera.ViewController.PositionScene(ARKit.ARSCNView)")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Code Notifications", "XI0002:Notifies you from using newer Apple APIs when targeting an older OS version", Justification = "<Pending>", Scope = "member", Target = "~M:JointAnalysis.iOS.OutputRecorder.DetectFaceLandmarks(CoreImage.CIImage)")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Code Notifications", "XI0002:Notifies you from using newer Apple APIs when targeting an older OS version", Justification = "<Pending>", Scope = "member", Target = "~M:JointAnalysis.iOS.ViewController.GetDevice~AVFoundation.AVCaptureDevice")]
 

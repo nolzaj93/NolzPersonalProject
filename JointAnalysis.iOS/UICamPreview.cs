@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ *  Austin Nolz COP 2001 Personal Project, learning/testing with ARKit,Vision
+ */
+
+using System;
 using System.Linq;
 using AVFoundation;
 using CoreGraphics;
@@ -10,8 +14,8 @@ namespace JointAnalysis.iOS
     //Source: https://github.com/xamarin/xamarin-forms-samples/tree/master/CustomRenderers/View
     public class UICameraPreview : UIView
     {
-        AVCaptureVideoPreviewLayer previewLayer;
-        CameraOptions cameraOptions;
+        private AVCaptureVideoPreviewLayer camPreviewLayer;
+        readonly CameraOptions cameraOptions;
 
         public event EventHandler<EventArgs> Tapped;
 
@@ -29,7 +33,7 @@ namespace JointAnalysis.iOS
         public override void Draw(CGRect rect)
         {
             base.Draw(rect);
-            previewLayer.Frame = rect;
+            camPreviewLayer.Frame = rect;
         }
 
         public override void TouchesBegan(NSSet touches, UIEvent evt)
@@ -50,7 +54,7 @@ namespace JointAnalysis.iOS
         void Initialize()
         {
             CaptureSession = new AVCaptureSession();
-            previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
+            camPreviewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
             {
                 Frame = Bounds,
                 VideoGravity = AVLayerVideoGravity.ResizeAspectFill
@@ -68,7 +72,7 @@ namespace JointAnalysis.iOS
             NSError error;
             var input = new AVCaptureDeviceInput(device, out error);
             CaptureSession.AddInput(input);
-            Layer.AddSublayer(previewLayer);
+            Layer.AddSublayer(camPreviewLayer);
             CaptureSession.StartRunning();
             IsPreviewing = true;
         }

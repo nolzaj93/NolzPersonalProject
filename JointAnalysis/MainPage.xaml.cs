@@ -1,5 +1,5 @@
 ﻿/*
- * @author Austin Nolz
+ *  Austin Nolz COP 2001 Personal Project, learning/testing with ARKit,Vision
  */
 
 

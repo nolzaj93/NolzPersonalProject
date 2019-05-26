@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ *  Austin Nolz COP 2001 Personal Project, learning/testing with ARKit,Vision
+ */
+
+using System;
 using JointAnalysis;
 using JointAnalysis.iOS;
 using Xamarin.Forms;

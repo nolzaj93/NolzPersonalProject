@@ -77,6 +77,10 @@
     <Compile Include="ARImpl_iOS.cs" />
     <Compile Include="CamPreviewRenderer.cs" />
     <Compile Include="UICamPreview.cs" />
+    <Compile Include="ARViewController.cs" />
+    <Compile Include="ARViewController.designer.cs">
+      <DependentUpon>ARViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -123,6 +127,7 @@
       <Visible>false</Visible>
     </ImageAsset>
     <InterfaceDefinition Include="MyViewController.xib" />
+    <InterfaceDefinition Include="ARViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
