@@ -23,9 +23,11 @@
 - https://github.com/xamarin/xamarin-forms-samples/tree/master/CustomRenderers/View
 - Connect iPhone 7 over WiFi for debugging, fix USB recognition error on Macbook Pro (1 hour 5/25)
 - https://docs.microsoft.com/en-us/xamarin/ios/deploy-test/wireless-deployment?tabs=macos
-- Debug, document, and format
+- Debug, document, and format - (2 hours 5/25)
+- Total time logged: 9 hours
 
 ## Sprint Backlog 3
+- Pay Apple Developer fee
 - Utilize ARKit/Vision within Xamarin to detect a face
 - Overlay an outline around the head
 - Find and Study tutorials and documentation for OpenCV
