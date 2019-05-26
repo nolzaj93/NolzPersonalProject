@@ -2,11 +2,6 @@
  *  Austin Nolz COP 2001 Personal Project, learning/testing with ARKit,Vision
  */
 
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Foundation;
 using UIKit;
 
 namespace JointAnalysis.iOS

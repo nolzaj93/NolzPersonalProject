@@ -2,7 +2,6 @@
  *  Austin Nolz COP 2001 Personal Project, learning/testing with ARKit,Vision
  */
 
-
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;

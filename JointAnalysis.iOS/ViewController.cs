@@ -23,7 +23,6 @@ namespace JointAnalysis.iOS
 
         AVCaptureVideoPreviewLayer _videoPreview;
 
-
         protected ViewController(IntPtr handle) : base(handle)
         {
             // Note: this .ctor should not contain any initialization logic.
