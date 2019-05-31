@@ -28,7 +28,9 @@
 
 ## Sprint Backlog 3
 - Pay Apple Developer fee
-- Utilize ARKit/Vision within Xamarin to detect a face
+- Utilize Vision within Xamarin to detect a face
+- https://trailheadtechnology.com/vision-framework-for-face-landmarks-detection-using-xamarin-ios/
+- https://github.com/vecalion/Xamarin.VisionFrameworkFaceLandmarks
 - Overlay an outline around the facial features
 - Research open-source projects that have implemented joint detection
 - Utilize OpenCV within Xamarin
