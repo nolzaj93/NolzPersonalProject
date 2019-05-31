@@ -29,13 +29,13 @@
 ## Sprint Backlog 3
 - Pay Apple Developer fee
 - Utilize ARKit/Vision within Xamarin to detect a face
-- Overlay an outline around the head
-- Find and Study tutorials and documentation for OpenCV
+- Overlay an outline around the facial features
 - Research open-source projects that have implemented joint detection
 - Utilize OpenCV within Xamarin
 - Debug, document, and format
 
 ## Sprint Backlog 4
+- Find and Study tutorials and documentation for OpenCV
 - Build a virtual skeleton with ARKit and OpenCV over an image
 - Outline the torso, arms and legs within the image view
 - Estimate joint positions
