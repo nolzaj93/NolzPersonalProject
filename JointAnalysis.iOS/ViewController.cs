@@ -1,5 +1,6 @@
 ﻿/*
  *  Austin Nolz COP 2001 Personal Project, learning/testing with ARKit,Vision
+ * in Xamarin iOS.
  */
 
 using System;
@@ -15,13 +16,14 @@ using Vision;
 
 namespace JointAnalysis.iOS
 {
+    /* The main ViewController
+     */
     public class ViewController : UIViewController
     {
         //Source: https://github.com/vecalion/Xamarin.VisionFrameworkFaceLandmarks/blob/master/Vision.FaceLandmarksDemo/ViewController.cs
-        readonly AVCaptureSession _captureSession = new AVCaptureSession();
-        readonly CAShapeLayer _shapeLayer = new CAShapeLayer();
-
-        AVCaptureVideoPreviewLayer _videoPreview;
+        readonly AVCaptureSession avCapSession = new AVCaptureSession();
+        readonly CAShapeLayer shapeOverlay = new CAShapeLayer();
+        private AVCaptureVideoPreviewLayer vidPreviewLayer;
 
         protected ViewController(IntPtr handle) : base(handle)
         {
@@ -34,7 +36,7 @@ namespace JointAnalysis.iOS
         {
             base.ViewDidLoad();
 
-            _videoPreview = new AVCaptureVideoPreviewLayer(_captureSession);
+            vidPreviewLayer = new AVCaptureVideoPreviewLayer(avCapSession);
 
             ConfigureDeviceAndStart();
 
@@ -45,26 +47,27 @@ namespace JointAnalysis.iOS
         {
             base.ViewDidAppear(animated);
 
-            View.Layer.AddSublayer(_videoPreview);
+            View.Layer.AddSublayer(vidPreviewLayer);
 
             // needs to filp coordinate system for Vision
-            _shapeLayer.AffineTransform = CGAffineTransform.MakeScale(1, -1);
+            shapeOverlay.AffineTransform = CGAffineTransform.MakeScale(1, -1);
 
-            View.Layer.AddSublayer(_shapeLayer);
+            View.Layer.AddSublayer(shapeOverlay);
         }
 
         public override void ViewDidLayoutSubviews()
         {
             base.ViewDidLayoutSubviews();
 
-            _videoPreview.Frame = View.Frame;
-            _shapeLayer.Frame = View.Frame;
+            vidPreviewLayer.Frame = View.Frame;
+            shapeOverlay.Frame = View.Frame;
         }
 
+        //Function that discovers the device's back camera and returns an AVCaptureDevice object to 
+        // ConfigureDeviceAndStart() where it is called below.
         public AVCaptureDevice GetDevice()
         {
-            var videoDeviceDiscoverySession = AVCaptureDeviceDiscoverySession.Create(new AVCaptureDeviceType[] { AVCaptureDeviceType.BuiltInWideAngleCamera },
-                                                                                                                 AVMediaType.Video,
+            var videoDeviceDiscoverySession = AVCaptureDeviceDiscoverySession.Create(new AVCaptureDeviceType[] { AVCaptureDeviceType.BuiltInWideAngleCamera }, AVMediaType.Video,
                                                                                                                  AVCaptureDevicePosition.Back);
             return videoDeviceDiscoverySession.Devices.FirstOrDefault();
         }
@@ -92,7 +95,7 @@ namespace JointAnalysis.iOS
 
                 // Configure Input
                 var input = AVCaptureDeviceInput.FromDevice(device, out var error2);
-                _captureSession.AddInput(input);
+                avCapSession.AddInput(input);
 
                 // Configure Output
                 var settings = new AVVideoSettingsUncompressed()
@@ -107,15 +110,15 @@ namespace JointAnalysis.iOS
                 };
 
                 var videoCaptureQueue = new DispatchQueue("Video Queue");
-                videoOutput.SetSampleBufferDelegateQueue(new OutputRecorder(View, _shapeLayer), videoCaptureQueue);
+                videoOutput.SetSampleBufferDelegateQueue(new OutputRecorder((UICameraPreview)View, shapeOverlay), videoCaptureQueue);
 
-                if (_captureSession.CanAddOutput(videoOutput))
+                if (avCapSession.CanAddOutput(videoOutput))
                 {
-                    _captureSession.AddOutput(videoOutput);
+                    avCapSession.AddOutput(videoOutput);
                 }
 
                 // Start session
-                _captureSession.StartRunning();
+                avCapSession.StartRunning();
             }
             catch (Exception e)
             {
@@ -135,24 +138,30 @@ namespace JointAnalysis.iOS
     //Vision Face Landmarker Detection
     public class OutputRecorder : AVCaptureVideoDataOutputSampleBufferDelegate
     {
-        readonly UIView _view;
+        readonly UICameraPreview _view;
         CAShapeLayer _shapeLayer;
 
-        public OutputRecorder(UIView view, CAShapeLayer shapeLayer)
+        public OutputRecorder(UICameraPreview view, CAShapeLayer shapeLayer)
         {
             _shapeLayer = shapeLayer;
             _view = view;
         }
 
+        /*
+         * This function is called each time new frames are captured. A CIImage object is created from the 
+         * pixels in the buffer on each call to this function. This is left mirrored to the correct orientation
+         * and then passed as an argument to DetectFaceLandmarks().        
+         */
         public override void DidOutputSampleBuffer(AVCaptureOutput captureOutput, CMSampleBuffer sampleBuffer, AVCaptureConnection connection)
         {
-            using (var pixelBuffer = sampleBuffer.GetImageBuffer())
-            using (var ciImage = new CIImage(pixelBuffer))
+            using (var imageBuffer = sampleBuffer.GetImageBuffer())
+            using (var ciImage = new CIImage(imageBuffer))
             using (var imageWithOrientation = ciImage.CreateByApplyingOrientation(ImageIO.CGImagePropertyOrientation.LeftMirrored))
             {
                 DetectFaceLandmarks(imageWithOrientation);
             }
 
+            //
             sampleBuffer.Dispose();
         }
 

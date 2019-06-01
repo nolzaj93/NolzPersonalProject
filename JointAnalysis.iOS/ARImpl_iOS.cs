@@ -12,9 +12,9 @@ namespace JointAnalysis.iOS
         public void LaunchAR()
         {
             // This is in native code; invoke the native UI
-            ARViewController viewController = new ARViewController();
+            ARViewController arViewController = new ARViewController();
             UIApplication.SharedApplication.KeyWindow.RootViewController.
-              PresentViewController(viewController, true, null);
+              PresentViewController(arViewController, true, null);
         }
     }
 }

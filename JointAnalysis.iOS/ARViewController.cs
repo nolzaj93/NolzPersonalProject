@@ -11,16 +11,6 @@ namespace JointAnalysis.iOS
 {
     public partial class ARViewController : UIViewController
     {
-        public ARViewController() : base("ARViewController", null)
-        {
-        }
-
-        public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
-            // Perform any additional setup after loading the view, typically from a nib.
-        }
-
         //Source:: https://msdn.microsoft.com/en-us/magazine/mt830360.aspx
         // Initialize AR scene view
         public void startAR()
@@ -55,10 +45,8 @@ namespace JointAnalysis.iOS
                 PlaneDetection = ARPlaneDetection.Horizontal,
                 LightEstimationEnabled = true
             })
-            {
                 // Run the AR session
                 sceneView.Session.Run(arConfiguration, ARSessionRunOptions.ResetTracking);
-            }
         }
 
 
