@@ -27,7 +27,6 @@
 - Total time logged: 9 hours
 
 ## Sprint Backlog 3
-- Pay Apple Developer fee
 - Utilize Vision within Xamarin to detect a face (1 hour 5/31)
 - Overlay an outline around the facial features (1 hour 5/31)
 - https://trailheadtechnology.com/vision-framework-for-face-landmarks-detection-using-xamarin-ios/
@@ -35,12 +34,13 @@
 - Research open-source projects that have implemented joint detection (2 hours 6/1)
 - https://www.youtube.com/watch?v=mhJs6zIoBUM
 - https://www.learnopencv.com/deep-learning-based-human-pose-estimation-using-opencv-cpp-python/
-- Find and Study tutorials and documentation for OpenCV/Emgu CV
+- Find and Study tutorials and documentation for using OpenCV within Xamarin iOS (1 hour 6/1)
 - https://chamoda.com/how-to-use-opencv-with-xamarin-ios/
 - https://github.com/trinnguyen/xamarin.ios-opencv
 - Debug, document, and format
 
 ## Sprint Backlog 4
+- Pay Apple Developer fee
 - Utilize OpenCV/Emgu CV within Xamarin
 - Build a virtual skeleton with ARKit and OpenCV over an image
 - Outline the torso, arms and legs within the image view
