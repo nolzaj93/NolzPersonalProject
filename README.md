@@ -31,7 +31,8 @@
 - Overlay an outline around the facial features (1 hour 5/31)
 - https://trailheadtechnology.com/vision-framework-for-face-landmarks-detection-using-xamarin-ios/
 - https://github.com/vecalion/Xamarin.VisionFrameworkFaceLandmarks
-- Research open-source projects that have implemented joint detection (2 hours 6/1)
+- Research open-source projects that have implemented face/joint detection (2 hours 6/1)
+- https://www.learnopencv.com/head-pose-estimation-using-opencv-and-dlib/
 - https://www.learnopencv.com/deep-learning-based-human-pose-estimation-using-opencv-cpp-python/
 - Find and Study tutorials and documentation for using OpenCV within Xamarin iOS (1 hour 6/1)
 - https://chamoda.com/how-to-use-opencv-with-xamarin-ios/
