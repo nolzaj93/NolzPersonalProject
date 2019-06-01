@@ -32,12 +32,14 @@
 - https://trailheadtechnology.com/vision-framework-for-face-landmarks-detection-using-xamarin-ios/
 - https://github.com/vecalion/Xamarin.VisionFrameworkFaceLandmarks
 - Overlay an outline around the facial features
-- Research open-source projects that have implemented joint detection
-- Utilize OpenCV within Xamarin
+- Research open-source projects that have implemented joint detection (2 hours 6/1)
+- https://www.youtube.com/watch?v=mhJs6zIoBUM
+- https://www.learnopencv.com/deep-learning-based-human-pose-estimation-using-opencv-cpp-python/
 - Debug, document, and format
 
 ## Sprint Backlog 4
-- Find and Study tutorials and documentation for OpenCV
+- Find and Study tutorials and documentation for OpenCV/Emgu CV
+- Utilize OpenCV/Emgu CV within Xamarin
 - Build a virtual skeleton with ARKit and OpenCV over an image
 - Outline the torso, arms and legs within the image view
 - Estimate joint positions
