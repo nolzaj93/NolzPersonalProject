@@ -40,8 +40,8 @@
 - https://trinnguyen.com/opencv-for-xamarin-ios/
 - https://github.com/trinnguyen/xamarin.ios-opencv
 - OpenCV API Reference: https://docs.opencv.org/3.0-beta/modules/refman.html
-- Document, and format
-- Total time logged: 5 hours
+- Document, and format (15 minutes 6/1)
+- Total time logged: 5.25 hours
 
 ## Sprint Backlog 4
 - Pay Apple Developer fee to allow testing on iPhone
