@@ -32,7 +32,6 @@
 - https://trailheadtechnology.com/vision-framework-for-face-landmarks-detection-using-xamarin-ios/
 - https://github.com/vecalion/Xamarin.VisionFrameworkFaceLandmarks
 - Research open-source projects that have implemented joint detection (2 hours 6/1)
-- https://www.youtube.com/watch?v=mhJs6zIoBUM
 - https://www.learnopencv.com/deep-learning-based-human-pose-estimation-using-opencv-cpp-python/
 - Find and Study tutorials and documentation for using OpenCV within Xamarin iOS (1 hour 6/1)
 - https://chamoda.com/how-to-use-opencv-with-xamarin-ios/
