@@ -35,6 +35,7 @@
 - https://www.learnopencv.com/deep-learning-based-human-pose-estimation-using-opencv-cpp-python/
 - Find and Study tutorials and documentation for using OpenCV within Xamarin iOS (1 hour 6/1)
 - https://chamoda.com/how-to-use-opencv-with-xamarin-ios/
+- https://github.com/chamoda/XamarinOpenCV
 - https://github.com/trinnguyen/xamarin.ios-opencv
 - Debug, document, and format
 
