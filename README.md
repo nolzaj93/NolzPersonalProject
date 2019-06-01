@@ -23,8 +23,8 @@
 - https://github.com/xamarin/xamarin-forms-samples/tree/master/CustomRenderers/View
 - Connect iPhone 7 over WiFi for debugging, fix USB recognition error on Macbook Pro (1 hour 5/25)
 - https://docs.microsoft.com/en-us/xamarin/ios/deploy-test/wireless-deployment?tabs=macos
-- Debug, document, and format (2 hours 5/25)
-- Total time logged: 9 hours
+- Document, and format (30 minutes 5/25)
+- Total time logged: 7.5 hours
 
 ## Sprint Backlog 3
 - Utilize Vision within Xamarin to detect a face (1 hour 5/31)
@@ -36,11 +36,14 @@
 - Find and Study tutorials and documentation for using OpenCV within Xamarin iOS (1 hour 6/1)
 - https://chamoda.com/how-to-use-opencv-with-xamarin-ios/
 - https://github.com/chamoda/XamarinOpenCV
+- https://trinnguyen.com/opencv-for-xamarin-ios/
 - https://github.com/trinnguyen/xamarin.ios-opencv
-- Debug, document, and format
+- OpenCV API Reference: https://docs.opencv.org/3.0-beta/modules/refman.html
+- Document, and format
+- Total time logged: 5 hours
 
 ## Sprint Backlog 4
-- Pay Apple Developer fee
+- Pay Apple Developer fee to allow testing on iPhone
 - Utilize OpenCV/Emgu CV within Xamarin
 - Build a virtual skeleton with ARKit and OpenCV over an image
 - Outline the torso, arms and legs within the image view
