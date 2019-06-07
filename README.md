@@ -45,8 +45,10 @@
 
 ## Sprint Backlog 4
 - Pay Apple Developer fee to allow testing on iPhone
-- Utilize OpenCV/Emgu CV within Xamarin
-- Build a virtual skeleton with ARKit and OpenCV over an image
+- Use NuGet to use C/C++ code for OpenCV within Xamarin Forms project (2 hours 6/7)
+- https://docs.microsoft.com/en-us/xamarin/cross-platform/cpp/
+- Utilize OpenCV within Xamarin 
+- Build a virtual stick figure with OpenCV over a video
 - Outline the torso, arms and legs within the image view
 - Estimate joint positions
 - Overlay markers over the joint positions
@@ -62,4 +64,4 @@
 - Debug, improve documentation, and research ways to improve accuracy of joint detection
 - Start creating algorithms to calculate joint angles
 - Start writing methods to analyze human movements
-- Begin coding algorithms that recognize movements faults and ideal movement
+- Begin converting algorithms to code that recognize movements faults and ideal movement
