@@ -44,17 +44,17 @@
 - Total time logged: 5.25 hours
 
 ## Sprint Backlog 4
-- Pay Apple Developer fee to allow testing on iPhone
-- Use NuGet to use C/C++ code for OpenCV within Xamarin Forms project (2 hours 6/7)
+- Research different methods to use C/C++ code for OpenCV within Xamarin Forms project (2 hours 6/7)
 - https://docs.microsoft.com/en-us/xamarin/cross-platform/cpp/
-- Utilize OpenCV within Xamarin 
+- Utilize OpenCV within Xamarin by following tutorial on creating static framework in Xcode and binding project (2 hours 6/7, 1 hour 6/8)
+- Debug, document, and format
+
+## Sprint Backlog 5
+- Pay Apple Developer fee to allow testing on iPhone
 - Build a virtual stick figure with OpenCV over a video
 - Outline the torso, arms and legs within the image view
 - Estimate joint positions
 - Overlay markers over the joint positions
-- Debug, document, and format
-
-## Sprint Backlog 5
 - Learn how to use OpenCV and ARKit to have the virtual skeleton move with the body in real time 
 - Record a video of movement with overlay
 - Test different combinations of clothing and environments for accuracy
