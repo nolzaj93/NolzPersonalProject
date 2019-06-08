@@ -46,7 +46,9 @@
 ## Sprint Backlog 4
 - Research different methods to use C/C++ code for OpenCV within Xamarin Forms project (2 hours 6/7)
 - https://docs.microsoft.com/en-us/xamarin/cross-platform/cpp/
+- https://drthitirat.wordpress.com/2013/06/03/use-c-codes-in-a-c-project-wrapping-native-c-with-a-managed-clr-wrapper/
 - Utilize OpenCV within Xamarin by following tutorial on creating static framework in Xcode and binding project (2 hours 6/7, 1 hour 6/8)
+- https://chamoda.com/how-to-use-opencv-with-xamarin-ios/
 - Debug, document, and format
 
 ## Sprint Backlog 5
