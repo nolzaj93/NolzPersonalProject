@@ -40,6 +40,7 @@ namespace JointAnalysis.iOS
 
             ConfigureDeviceAndStart();
 
+
         }
 
         //Source: https://github.com/vecalion/Xamarin.VisionFrameworkFaceLandmarks/blob/master/Vision.FaceLandmarksDemo/ViewController.cs
@@ -136,6 +137,8 @@ namespace JointAnalysis.iOS
     }
 
     //Vision Face Landmarker Detection
+    //https://trailheadtechnology.com/vision-framework-for-face-landmarks-detection-using-xamarin-ios/
+    //https://github.com/vecalion/Xamarin.VisionFrameworkFaceLandmarks
     public class OutputRecorder : AVCaptureVideoDataOutputSampleBufferDelegate
     {
         readonly UICameraPreview _view;

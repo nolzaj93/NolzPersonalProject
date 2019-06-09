@@ -136,6 +136,9 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="NativeLibrary">
+      <HintPath>..\..\..\..\Projects\OpenCVBindingLib\OpenCVBindingLib\obj\Debug\NativeLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />

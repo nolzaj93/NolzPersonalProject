@@ -21,7 +21,6 @@ namespace JointAnalysis
         public MainPage()
         {
             InitializeComponent();
-
         }
     }
 }
