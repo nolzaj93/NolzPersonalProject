@@ -49,7 +49,9 @@
 - https://drthitirat.wordpress.com/2013/06/03/use-c-codes-in-a-c-project-wrapping-native-c-with-a-managed-clr-wrapper/
 - Utilize OpenCV within Xamarin by following tutorial on creating static framework in Xcode and binding project (2 hours 6/7, 1 hour 6/8)
 - https://chamoda.com/how-to-use-opencv-with-xamarin-ios/
-- Debug, document, and format
+- Attempted to follow a different tutorial to setup an Objective-C wrapper (static library) to call OpenCV functions, and a C# wrapper (Xamarin iOS Binding Project) (3 hours 6/8)
+- https://trinnguyen.com/opencv-for-xamarin-ios/
+- Total time logged: 8 hours
 
 ## Sprint Backlog 5
 - Pay Apple Developer fee to allow testing on iPhone
