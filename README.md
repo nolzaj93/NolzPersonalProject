@@ -51,6 +51,7 @@
 - https://chamoda.com/how-to-use-opencv-with-xamarin-ios/
 - Attempted to follow a different tutorial to setup an Objective-C wrapper (static library) to call OpenCV functions, and a C# wrapper (Xamarin iOS Binding Project) (3 hours 6/8)
 - https://trinnguyen.com/opencv-for-xamarin-ios/
+- https://github.com/nolzaj93/OpenCVBindingLibrary
 - Total time logged: 8 hours
 
 ## Sprint Backlog 5
