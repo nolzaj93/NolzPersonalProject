@@ -1,1 +1,0 @@
-This folder holds the OpenCVBindingLibrary which allows this app to call OpenCV functions written in C++ from C# code.
