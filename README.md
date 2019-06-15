@@ -56,6 +56,14 @@
 
 ## Sprint Backlog 5
 - Pay Apple Developer fee to allow testing on iPhone
+- Research Microsoft tutorials for using C++ code within C# to call OpenCV functions(1 hour 6/14)
+- https://www.youtube.com/watch?v=48CC0_Jc3_I
+- Research how to customize UI using UIKit, UIViewController, and UINavigationController within AppDelegate (1 hour 6/14)
+- https://docs.microsoft.com/en-us/xamarin/ios/app-fundamentals/ios-code-only?tabs=macos
+- Debug, document, and format
+
+## Sprint Backlog 6
+- Debug, improve documentation, and research ways to improve accuracy of joint detection
 - Build a virtual stick figure with OpenCV over a video
 - Outline the torso, arms and legs within the image view
 - Estimate joint positions
@@ -63,10 +71,6 @@
 - Learn how to use OpenCV and ARKit to have the virtual skeleton move with the body in real time 
 - Record a video of movement with overlay
 - Test different combinations of clothing and environments for accuracy
-- Debug, document, and format
-
-## Sprint Backlog 6
-- Debug, improve documentation, and research ways to improve accuracy of joint detection
 - Start creating algorithms to calculate joint angles
 - Start writing methods to analyze human movements
 - Begin converting algorithms to code that recognize movements faults and ideal movement
