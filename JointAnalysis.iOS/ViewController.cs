@@ -278,7 +278,6 @@ namespace JointAnalysis.iOS
             };
         }
     }
-
 }
 
 
