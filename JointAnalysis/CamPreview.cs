@@ -11,10 +11,10 @@ namespace JointAnalysis
     {
 
         public static readonly BindableProperty CameraProperty = BindableProperty.Create(
-            propertyName: "Camera",
-            returnType: typeof(CameraOptions),
-            declaringType: typeof(CamPreview),
-            defaultValue: CameraOptions.Rear);
+            "Camera",
+            typeof(CameraOptions),
+            typeof(CamPreview),
+            CameraOptions.Rear);
 
         public CameraOptions Camera
         {

@@ -39,8 +39,6 @@ namespace JointAnalysis.iOS
             vidPreviewLayer = new AVCaptureVideoPreviewLayer(avCapSession);
 
             ConfigureDeviceAndStart();
-
-
         }
 
         //Source: https://github.com/vecalion/Xamarin.VisionFrameworkFaceLandmarks/blob/master/Vision.FaceLandmarksDemo/ViewController.cs
@@ -127,13 +125,11 @@ namespace JointAnalysis.iOS
             }
         }
 
-
         public override void DidReceiveMemoryWarning()
         {
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
         }
-
     }
 
     //Vision Face Landmarker Detection
@@ -198,19 +194,19 @@ namespace JointAnalysis.iOS
 
                         InvokeOnMainThread(() =>
                         {
-                            DrawLandmark(result.Landmarks.FaceContour, scaledBoundingBox, false, UIColor.White);
+                            DrawLandmark(result.Landmarks.FaceContour, scaledBoundingBox, false, UIColor.Orange);
 
-                            DrawLandmark(result.Landmarks.LeftEye, scaledBoundingBox, true, UIColor.Green);
-                            DrawLandmark(result.Landmarks.RightEye, scaledBoundingBox, true, UIColor.Green);
+                            DrawLandmark(result.Landmarks.LeftEye, scaledBoundingBox, true, UIColor.Orange);
+                            DrawLandmark(result.Landmarks.RightEye, scaledBoundingBox, true, UIColor.Orange);
 
-                            DrawLandmark(result.Landmarks.Nose, scaledBoundingBox, true, UIColor.Blue);
-                            DrawLandmark(result.Landmarks.NoseCrest, scaledBoundingBox, false, UIColor.Blue);
+                            DrawLandmark(result.Landmarks.Nose, scaledBoundingBox, true, UIColor.Orange);
+                            DrawLandmark(result.Landmarks.NoseCrest, scaledBoundingBox, false, UIColor.Orange);
 
-                            DrawLandmark(result.Landmarks.InnerLips, scaledBoundingBox, true, UIColor.Yellow);
-                            DrawLandmark(result.Landmarks.OuterLips, scaledBoundingBox, true, UIColor.Yellow);
+                            DrawLandmark(result.Landmarks.InnerLips, scaledBoundingBox, true, UIColor.Orange);
+                            DrawLandmark(result.Landmarks.OuterLips, scaledBoundingBox, true, UIColor.Orange);
 
-                            DrawLandmark(result.Landmarks.LeftEyebrow, scaledBoundingBox, false, UIColor.Blue);
-                            DrawLandmark(result.Landmarks.RightEyebrow, scaledBoundingBox, false, UIColor.Blue);
+                            DrawLandmark(result.Landmarks.LeftEyebrow, scaledBoundingBox, false, UIColor.Orange);
+                            DrawLandmark(result.Landmarks.RightEyebrow, scaledBoundingBox, false, UIColor.Orange);
                         });
                     }
                 });
@@ -235,14 +231,14 @@ namespace JointAnalysis.iOS
             }
         }
 
-        void DrawLandmark(VNFaceLandmarkRegion2D feature, CGRect scaledBoundingBox, bool closed, UIColor color)
+        void DrawLandmark(VNFaceLandmarkRegion2D facialFeature, CGRect scaledBoundingBox, bool closed, UIColor color)
         {
-            if (feature == null)
+            if (facialFeature == null)
             {
                 return;
             }
 
-            var mappedPoints = feature.NormalizedPoints.Select(o => new CGPoint(x: o.X * scaledBoundingBox.Width + scaledBoundingBox.X, y: o.Y * scaledBoundingBox.Height + scaledBoundingBox.Y));
+            var mappedPoints = facialFeature.NormalizedPoints.Select(o => new CGPoint(x: o.X * scaledBoundingBox.Width + scaledBoundingBox.X, y: o.Y * scaledBoundingBox.Height + scaledBoundingBox.Y));
 
             using (var newLayer = new CAShapeLayer())
             {
