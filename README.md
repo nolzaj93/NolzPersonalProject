@@ -55,15 +55,16 @@
 - Total time logged: 8 hours
 
 ## Sprint Backlog 5
-- Pay Apple Developer fee to allow testing on iPhone
 - Research Microsoft tutorials for using C++ code within C# to call OpenCV functions(1 hour 6/14)
 - https://www.youtube.com/watch?v=48CC0_Jc3_I
 - Research how to customize UI using UIKit, UIViewController, and UINavigationController within AppDelegate (1 hour 6/14)
 - https://docs.microsoft.com/en-us/xamarin/ios/app-fundamentals/ios-code-only?tabs=macos
-- Debug, document, and format
+- More reading and research on how to wrap C++ OpenCV framework into C# (2 hours 6/15)
+- https://docs.microsoft.com/en-us/xamarin/cross-platform/cpp/
+- Total time logged: 4 hours
 
 ## Sprint Backlog 6
-- Debug, improve documentation, and research ways to improve accuracy of joint detection
+- Pay Apple Developer fee to allow testing on iPhone
 - Build a virtual stick figure with OpenCV over a video
 - Outline the torso, arms and legs within the image view
 - Estimate joint positions
