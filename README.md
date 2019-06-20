@@ -101,14 +101,19 @@
 - Total time logged: 4 hours
 
 ## Sprint Backlog 6
-- Pay Apple Developer fee to allow testing on iPhone
+- Pay Apple Developer fee to allow testing on iPhone (15 minutes 6/20)
+- Research how to create UML diagram for a MVC project, including symbols for associations, dependencies, inheritance, aggregation, and composition. (1 hour 6/20)
+- Test and debug the current sample project.
+- Create a gif of the program running
+
+## Future tasks
+- Determine if Xamarin is the best option for cross-platform mobile development. I will look into Python development with Kivy, Java development with the Gluon framework, and other cross-platform options. Another option is to spend the extra time to create a native Swift project for iOS and a native project for Android, which may be the best option because documentation and sample code are more abundant for the native languages.
 - Build a virtual stick figure with OpenCV over a video
 - Outline the torso, arms and legs within the image view
 - Estimate joint positions
 - Overlay markers over the joint positions
 - Learn how to use OpenCV and ARKit to have the virtual skeleton move with the body in real time 
 - Record a video of movement with overlay
-- Test different combinations of clothing and environments for accuracy
 - Start creating algorithms to calculate joint angles
 - Start writing methods to analyze human movements
 - Begin converting algorithms to code that recognize movements faults and ideal movement
