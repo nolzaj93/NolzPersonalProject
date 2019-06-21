@@ -1,6 +1,5 @@
-# NolzPersonalProject
-
-# Project Title
+# COP2001 Personal Project Summer A 2019
+The goal of this project was to learn by creating a Xamarin iOS app with future capability to be supported on Android and Windows mobile devices. For the FGCU Programming Methodology curriculum, we were tasked with creating a personal project within a selection of categories, and I chose to use C#. This application was made individually with about a year of experience programming. 
 
 
 ## Demonstration
@@ -13,19 +12,39 @@
 
 
 ## Getting Started
-
+Download Visual Studio and click the green button to 
 
 ## Built With
-
+Visual Studio for Mac 2019
 
 ## Contributing
 
 
 ## Author
-
+- Austin Nolz
 
 ## License
+MIT License
 
+Copyright (c) 2019 Austin Nolz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Acknowledgments
 
