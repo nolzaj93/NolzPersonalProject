@@ -1,4 +1,4 @@
-# COP2001 Personal Project Summer A 2019
+## COP2001 Personal Project Summer A 2019
 The goal of this project was to learn by creating a Xamarin iOS app with future capability to be supported on Android and Windows mobile devices. For the FGCU Programming Methodology curriculum, we were tasked with creating a personal project within a selection of categories, and I chose to use C#. This application was made individually with about a year of experience programming. 
 
 
@@ -12,7 +12,7 @@ The goal of this project was to learn by creating a Xamarin iOS app with future 
 
 
 ## Getting Started
-Download Visual Studio and click the green button to 
+Download Visual Studio and click the green button to Open in Desktop or Download as a Zip and extract the project. Open the project within Visual Studio to analyze, run, test.
 
 ## Built With
 Visual Studio for Mac 2019
@@ -47,15 +47,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Acknowledgments
-
+James Montemagno at Microsoft - [Github](https://github.com/jamesmontemagno)
+Valeriy Kovalenko - [Website](https://trailheadtechnology.com/vision-framework-for-face-landmarks-detection-using-xamarin-ios/)
 
 ## History
 
 
 ## Key Programming Concepts Utilized
-
-
-## COP2001 Project at FGCU
+Object-Oriented Programming, MVC Architecture, Cross-platform mobile development, 
 
 ## Problem Statement
   The problem is to create a program to add to my portfolio, which displays my skills to potential employers and my professor. The ultimate short-term goal within the next six weeks is to create a cross-platform mobile app that will originally run on iOS that is able to overlay an AR skeleton on a human body within a camera view. My boundaries are to develop software within the following categories: Android, Gaming, C#, Raspberry Pi, or iOS. The long-term goal is to use these technologies to analyze biomechanics while standing, walking, running, throwing and a library of other movements with a cross-platform application available on iOS, Android, and Windows. Short-term success would be to learn C# and use Xamarin to create a mobile application that runs on iOS, which uses OpenCV and ARKit to recognize the user’s face and construct a virtual skeleton over a picture or video. The main constraints are lack tutorial materials for Xamarin and the limited time available in the next six weeks to complete the project. Another constraint is that I do not own an Android device, so I may need to find a way to use a webcam with the Android simulator to test and develop for this platform. I am assuming that C# will have the capability of achieving the short-term goal to create a cross platform mobile application using Xamarin and implementing Augmented Reality/Computer Vision. Another assumption I am making is that I will be capable of learning how to solve this problem and achieving the short-term goal within this accelerated semester. The stakeholders are myself, my professor, and potential employers. The timeline for the completion of the short-term goal of completing a personal project with C# is six weeks. Each week will be a Sprint during which I have set incremental tasks described in the Sprint Backlogs below.
