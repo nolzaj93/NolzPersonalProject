@@ -47,8 +47,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Acknowledgments
-James Montemagno at Microsoft - [Github](https://github.com/jamesmontemagno)
-Valeriy Kovalenko - [Website](https://trailheadtechnology.com/vision-framework-for-face-landmarks-detection-using-xamarin-ios/)
+- James Montemagno at Microsoft - [Github](https://github.com/jamesmontemagno)
+- Valeriy Kovalenko - [Website](https://trailheadtechnology.com/vision-framework-for-face-landmarks-detection-using-xamarin-ios/)
 
 ## History
 
