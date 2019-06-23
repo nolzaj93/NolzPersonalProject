@@ -4,6 +4,7 @@ The goal of this project was to learn by creating a Xamarin iOS app with future 
 
 ## Demonstration
 My long-term goal is to generate an AR skeleton over detected key points on the body and to display these markers on photo and video output. At this point, I have learned the basics of generating a Xamarin app, building UI, handling events, and accessing the camera.
+
 ![](1stDemo.gif)
 
 ## Documentation
