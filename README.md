@@ -6,10 +6,10 @@ The goal of this project was to learn by creating a Xamarin iOS app with future 
 
 
 ## Documentation
-
+This project is still in the design phase as I am still learning. Most of the current code is default from creating a Xamarin Forms project and sample code found on Github. 
 
 ## Diagrams
-
+Coming soon.
 
 ## Getting Started
 Download Visual Studio and click the green button to Open in Desktop or Download as a Zip and extract the project. Open the project within Visual Studio to analyze, run, test.
@@ -18,7 +18,7 @@ Download Visual Studio and click the green button to Open in Desktop or Download
 Visual Studio for Mac 2019
 
 ## Contributing
-
+At the current moment I am attempting to learn how to handle the orientation change event, and how to structure the XAML within landscape.
 
 ## Author
 - Austin Nolz
@@ -121,8 +121,9 @@ Object-Oriented Programming, MVC Architecture, Cross-platform mobile development
 ## Sprint Backlog 6
 - Pay Apple Developer fee to allow testing on iPhone (15 minutes 6/20)
 - Research how to create UML diagram for a MVC project, including symbols for associations, dependencies, inheritance, aggregation, and composition. (1 hour 6/20)
-- Test and debug the current sample project.
-- Create a gif of the program running
+- Test and debug the current sample project (2 hours 6/22).
+- Create a gif of the program running (15 minutes 6/22)
+- Total time logged: 3 hours 30 minutes
 
 ## Future tasks
 - Determine if Xamarin is the best option for cross-platform mobile development. I will look into Python development with Kivy, Java development with the Gluon framework, and other cross-platform options. Another option is to spend the extra time to create a native Swift project for iOS and a native project for Android, which may be the best option because documentation and sample code are more abundant for the native languages.
